@@ -2,6 +2,9 @@ import "../../public/css/style.css"
 import Footer from "./component/comman/Footer";
 import Header from "./component/comman/Header";
 
+export const metadata = {
+  viewport: "width=device-width, initial-scale=1",
+};
 
 
 

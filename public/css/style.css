@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:wght@100..900&family=Tinos:wght@400;700&display=swap');
 @import "tailwindcss";
 
 
 
-
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
 
 @keyframes zoomInFade {
     0% {
@@ -18,7 +29,18 @@
 }
 
 .zoom-in {
-    animation: zoomInFade 0.5s ease-out forwards;
+  animation: zoomIn 0.7s ease-out both;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .personal-inter {
@@ -60,5 +82,17 @@
 
 .animate-from-top {
   animation: slideDown 0.8s ease-out forwards;
+}
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-vibrate {
+  animation: vibrate 0.3s linear infinite;
 }
 
