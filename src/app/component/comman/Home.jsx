@@ -3,13 +3,19 @@ import React from 'react'
 import Our from '../Our'
 import Key from '../Key'
 import Why from '../Why'
+import Video from '../Video'
+import Intro from '../Intro'
+import Choose from '../Choose'
+import Testimonial from '../Testimonial'
+import Year from '../Year'
+
 
 export default function Home() {
     return (
         <>
             {/* FIXED BACKGROUND VIDEO */}
             <div
-                className="w-full"
+                className="w-full relative"
                 style={{
                     backgroundImage: "url('/IMG_20260113_130526.jpg')",
                     backgroundSize: "cover",
@@ -17,6 +23,21 @@ export default function Home() {
                     height: "90vh",
                 }}
             >
+                {/* !U3+3+♥ Bottom Fade / Feather */}
+                <div
+                    className="
+      absolute
+      bottom-0
+      left-0
+      w-full
+      h-40
+      bg-gradient-to-t
+      from-[#F6F2EA]
+      to-transparent
+      pointer-events-none
+    "
+                />
+
                 <div className="container mx-auto h-full flex items-center justify-start px-4 sm:px-6">
                     <div
                         className="
@@ -31,20 +52,20 @@ export default function Home() {
                     >
                         <h1
                             className="
-           font-inter
-  text-black
-  text-3xl
-  sm:text-4xl
-  md:text-4xl
-  xl:text-5xl
-  2xl:text-6xl
-  pb-4
-  font-semibold
-  leading-tight
+          font-inter
+          text-black
+          text-3xl
+          sm:text-4xl
+          md:text-4xl
+          xl:text-5xl
+          2xl:text-6xl
+          pb-4
+          font-semibold
+          leading-tight
         "
                         >
                             TRACK SMARTER.
-  <span className="block mt-4">DRIVE SAFER.</span>
+                            <span className="block mt-4">DRIVE SAFER.</span>
                         </h1>
 
                         <h2
@@ -115,14 +136,28 @@ export default function Home() {
 
 
 
+                 <Why />
+                 <Intro/> 
+
             {/* step 2 */}
             <Our />
 
             {/* step 3 */}
-            {/* <Key /> */}
+            <Key />
 
             {/* step3 */}
-            {/* <Why /> */}
+
+            <Choose/>
+
+                <Year/>
+                
+            <Testimonial/>
+
+            
+           
+
+
+            <Video />
 
 
         </>
