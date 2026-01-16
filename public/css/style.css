@@ -242,3 +242,16 @@
   display: flex;
   align-items: center;
 }
+/* Left Arrow */
+.slick-prev {
+  left: -20px; /* arrow ko left se thoda bahar ya andar le aana */
+  z-index: 10;
+  padding: 10px; /* arrow ke andar space */
+}
+
+/* Right Arrow */
+.slick-next {
+  right: -20px; /* arrow ko right se thoda adjust karna */
+  z-index: 10;
+  padding: 10px;
+}
