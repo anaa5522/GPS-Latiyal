@@ -27,7 +27,7 @@ export default function TrackSection() {
 
         {/* Paragraph below heading */}
         <p className="text-center text-[#383838] mt-4 mb-10">
-         Advance GPS Solution for real time vehicle tracking
+          Advance GPS Solution for real time vehicle tracking
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

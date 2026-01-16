@@ -129,3 +129,116 @@
     transform: translateX(110vw);
   }
 }
+.animate-slide {
+          animation: slide 20s linear infinite;
+        }
+
+        .pause {
+          animation-play-state: paused;
+        }
+
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+
+/* SLIDER WRAPPER */
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* SLIDER TRACK */
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: slide 30s linear infinite;
+  will-change: transform;
+}
+
+/* PAUSE ON HOVER */
+.slider-wrapper:hover .slider-track {
+  animation-play-state: paused;
+}
+
+/* SLIDER ITEM */
+.slider-item {
+  min-width: 300px;
+  margin-right: 24px; /* gap yahin se handle */
+  background: #ffffff;
+  border-left: 4px solid #FCB13B;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.slider-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slider-item h3 {
+  font-weight: 700;
+  color: #000;
+}
+
+/* ANIMATION */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* REMOVE DEFAULT SLICK GAP */
+.slick-slide {
+  padding: 0 12px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* CARD DESIGN */
+.slick-card {
+  background: #ffffff;
+  border-left: 4px solid #FCB13B;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 90px;
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.slick-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slick-card h3 {
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+}
+
+/* SMOOTH CONTINUOUS EFFECT */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
