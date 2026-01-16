@@ -73,7 +73,7 @@ export default function Intro() {
           <img
             src="imgi_676_white-smartphone-mockup-blank-screen-isolated-on-transparent-background-smartphone-mockup-frame-free-png.png"
             alt="iPhone Frame"
-            className="w-[120px] md:w-[300px] relative rounded-4xl"
+            className="w-[120px] md:w-[300px] relative rounded-4xl shadow-2xl"
           />
 
         </div>

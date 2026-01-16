@@ -8,6 +8,7 @@ import Intro from '../Intro'
 import Choose from '../Choose'
 import Testimonial from '../Testimonial'
 import Year from '../Year'
+import Scroller from '../Scroller'
 
 
 export default function Home() {
@@ -134,7 +135,7 @@ export default function Home() {
             </div>
 
 
-
+                {/* <Scroller/> */}
 
                  <Why />
                  <Intro/> 
